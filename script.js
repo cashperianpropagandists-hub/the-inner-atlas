@@ -14,7 +14,6 @@ if (menuButton && nav) {
     const open = nav.classList.toggle("open");
     menuButton.setAttribute("aria-expanded", String(open));
   });
-}
 const year = document.getElementById("year");
 if (year) year.textContent = new Date().getFullYear();
 
