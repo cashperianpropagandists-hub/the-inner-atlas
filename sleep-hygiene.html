@@ -1,57 +1,1291 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sleep Hygiene — research and notes from The Inner Atlas.">
-  <title>Sleep Hygiene — The Inner Atlas</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="A research-based guide to sleep hygiene for young adults in Kashmir, covering sleep science, healthy routines, seasonal challenges and practical recommendations.">
+
+  <meta name="theme-color" content="#f5f0e6">
+
+  <title>Sleep Hygiene for a Young Adult in Kashmir — The Inner Atlas</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Article-specific refinements */
+
+    .article-page {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .article-header {
+      max-width: 850px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .article-header h1 {
+      line-height: 1.15;
+      letter-spacing: -0.7px;
+    }
+
+    .article-deck {
+      line-height: 1.8;
+    }
+
+    .article-cover {
+      overflow: hidden;
+      border-radius: 14px;
+    }
+
+    .article-cover img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .prose {
+      max-width: 790px;
+      margin: 0 auto;
+    }
+
+    .prose h2 {
+      margin-top: 55px;
+      margin-bottom: 18px;
+      line-height: 1.3;
+    }
+
+    .prose h3 {
+      margin-top: 35px;
+      margin-bottom: 13px;
+      line-height: 1.4;
+    }
+
+    .prose p {
+      line-height: 1.9;
+      margin-bottom: 19px;
+    }
+
+    .prose ul,
+    .prose ol {
+      padding-left: 25px;
+      margin: 15px 0 25px;
+    }
+
+    .prose li {
+      line-height: 1.85;
+      margin-bottom: 10px;
+    }
+
+    .prose strong {
+      font-weight: 700;
+    }
+
+    .research-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      margin: 25px 0 35px;
+      border: 1px solid rgba(70, 65, 50, 0.15);
+      border-radius: 10px;
+    }
+
+    .research-table {
+      width: 100%;
+      min-width: 560px;
+      border-collapse: collapse;
+      font-size: 14px;
+      line-height: 1.7;
+      text-align: left;
+    }
+
+    .research-table th {
+      font-weight: 700;
+      background: rgba(120, 110, 75, 0.10);
+    }
+
+    .research-table th,
+    .research-table td {
+      padding: 15px 16px;
+      border-bottom: 1px solid rgba(70, 65, 50, 0.13);
+      vertical-align: top;
+    }
+
+    .research-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .research-note {
+      padding: 20px 22px;
+      margin: 25px 0;
+      border-left: 3px solid #a49a70;
+      background: rgba(164, 154, 112, 0.09);
+      border-radius: 0 8px 8px 0;
+      line-height: 1.8;
+    }
+
+    .research-warning {
+      padding: 20px 22px;
+      margin: 25px 0;
+      border-left: 3px solid #a66d4b;
+      background: rgba(166, 109, 75, 0.08);
+      border-radius: 0 8px 8px 0;
+      line-height: 1.8;
+    }
+
+    .research-plan {
+      padding-left: 0 !important;
+      list-style: none;
+    }
+
+    .research-plan li {
+      padding: 17px 20px;
+      margin-bottom: 13px;
+      border: 1px solid rgba(70, 65, 50, 0.14);
+      border-radius: 9px;
+    }
+
+    .research-plan strong {
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    .article-disclaimer {
+      margin: 35px auto;
+      max-width: 790px;
+      padding: 18px 20px;
+      border: 1px solid rgba(70, 65, 50, 0.15);
+      border-radius: 9px;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .article-end {
+      margin-top: 55px;
+    }
+
+    @media screen and (max-width: 600px) {
+      .article-page {
+        padding-left: 19px;
+        padding-right: 19px;
+      }
+
+      .article-header h1 {
+        font-size: 34px;
+      }
+
+      .prose h2 {
+        font-size: 25px;
+        margin-top: 42px;
+      }
+
+      .prose h3 {
+        font-size: 19px;
+      }
+
+      .research-table th,
+      .research-table td {
+        padding: 12px;
+      }
+
+      .research-note,
+      .research-warning {
+        padding: 16px;
+      }
+    }
+  </style>
 </head>
+
 <body>
+
+  <!-- HEADER -->
   <header class="site-header">
-    <a class="brand" href="index.html"><span class="brand-mark">IA</span><span>The Inner Atlas</span></a>
-    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-    <nav class="nav"><a href="index.html">Home</a><a href="about.html">About</a><a class="active" href="index.html#articles">Articles</a><a href="contact.html">Contact</a></nav>
+    <a class="brand" href="index.html">
+      <span class="brand-mark">IA</span>
+      <span>The Inner Atlas</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a class="active" href="index.html#articles">Articles</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
+
+
+  <!-- MAIN ARTICLE -->
   <main class="article-page">
-    <a class="back-link" href="index.html#articles">← Back to all research</a>
+
+    <a class="back-link" href="index.html#articles">
+      ← Back to all research
+    </a>
+
+
+    <!-- ARTICLE INTRODUCTION -->
     <div class="article-header">
-      <p class="eyebrow">RESEARCH · SLEEP & WELL-BEING</p>
-      <h1>Sleep Hygiene: A Research-Based Guide</h1>
-      <p class="article-deck">Exploring the science of sleep, healthy sleep habits, circadian rhythms and their impact on human well-being.</p>
-      <div class="article-meta"><span>THE INNER ATLAS</span><span>·</span><span>Research notes</span></div>
-    </div>
-    <div class="article-cover image-one"><img src="sleeping-man.png" alt="Artwork illustrating sleep" style="width:100%;height:100%;object-fit:cover"></div>
-    <article class="prose">
-      <p class="lead">This is the home for your Sleep Hygiene research. Replace this introduction and add your researched sections whenever the article is ready.</p>
-      <h2>What is sleep hygiene?</h2>
-      <p>Add your research content here. You can create headings, paragraphs, images and citations using the same article layout.</p>
-      <h2>Why does sleep matter?</h2>
-      <p>Add your findings about sleep duration, sleep quality, circadian rhythms and health here.</p>
-      <h2>Practical sleep habits</h2>
-      <p>Add evidence-based recommendations and references here. Comments below are tied specifically to this research page.</p>
-    </article>
-    <section class="comments-section" data-comments data-research-id="sleep-hygiene">
-      <p class="eyebrow">READER DISCUSSION</p>
-      <h2>Join the conversation.</h2>
-      <p class="comments-intro">Sign in with Google to share a thought or ask a question about this research.</p>
-      <div class="auth-row">
-        <span class="user-status" data-user-status>You're browsing as a guest.</span>
-        <button class="button button-dark" type="button" data-google-signin>Continue with Google</button>
-        <button class="button button-outline" type="button" data-signout hidden>Sign out</button>
+
+      <p class="eyebrow">
+        RESEARCH · SLEEP & WELL-BEING
+      </p>
+
+      <h1>
+        Sleep Hygiene for a Young Adult in Kashmir
+      </h1>
+
+      <p class="article-deck">
+        A research-based guide to understanding sleep, building
+        healthier routines and improving sleep quality in the
+        context of life in Kashmir.
+      </p>
+
+      <div class="article-meta">
+        <span>THE INNER ATLAS</span>
+        <span>·</span>
+        <span>Research paper</span>
       </div>
+
+    </div>
+
+
+    <!-- ARTICLE COVER -->
+    <div class="article-cover image-one">
+      <img
+        src="sleeping-man.png"
+        alt="Artwork illustrating sleep and rest"
+        style="width:100%;height:100%;object-fit:cover"
+      >
+    </div>
+
+
+    <!-- RESEARCH CONTENT -->
+    <article class="prose">
+
+      <h2>Abstract</h2>
+
+      <p>
+        Sleep hygiene means the habits and surroundings that make
+        it easier to fall asleep, stay asleep, and wake up rested.
+        This paper looks at what research says about sleep needs
+        and sleep control in late teens and young adults, sums up
+        which hygiene habits have the strongest support, and
+        applies them to one profile: an 18 year old in Kashmir
+        who goes to bed around 11:30 pm but wakes up at different
+        times.
+      </p>
+
+      <p>
+        The main point is that the most valuable change for this
+        person is not the bedtime, which is already reasonable,
+        but fixing the wake time. Around that, the paper covers
+        morning light, caffeine (including noon chai), screens,
+        naps, food and exercise timing, the bedroom, and issues
+        specific to the region, such as long cold winters,
+        heating safety, power cuts, the Fajr prayer, Ramadan,
+        and the fact that Kashmir sits well west of the meridian
+        that sets Indian Standard Time.
+      </p>
+
+      <p>
+        It ends with a two week plan and advice on when to seek
+        professional help.
+      </p>
+
+
+      <h2>1. Introduction</h2>
+
+      <p>
+        Late adolescence is one of the hardest periods for sleep.
+        The body clock pushes bedtimes later, studies and social
+        life pile up, and phones give you endless reasons to stay
+        awake. Yet sleep is closely tied to memory, attention,
+        mood, immunity, and long term heart and metabolic health.
+      </p>
+
+      <p>
+        The profile examined here is common and, in some ways,
+        a good one: a steady bedtime of around 11:30 pm. The
+        weak point is the changing wake time. Research on sleep
+        regularity suggests that being inconsistent is a real
+        problem on its own, not just the total hours. The sections
+        below explain why, and what to do about it.
+      </p>
+
+
+      <h2>2. How sleep is regulated</h2>
+
+      <p>
+        Two systems mostly decide when we feel sleepy and when
+        we feel alert (Borbély's two process model).
+      </p>
+
+      <h3>Process S: Sleep pressure</h3>
+
+      <p>
+        The need for sleep builds up the longer you stay awake
+        and drops once you sleep. A chemical called adenosine
+        is a major part of this. Caffeine blocks adenosine
+        receptors, so it hides sleepiness without removing
+        the pressure underneath.
+      </p>
+
+      <h3>Process C: Circadian rhythm</h3>
+
+      <p>
+        A roughly 24 hour internal clock in an area of the brain
+        called the suprachiasmatic nucleus. It is set mainly by
+        light, and also by meal timing, exercise, and social
+        routine. Melatonin rises in the evening when it is dim
+        and is held back by bright light.
+      </p>
+
+      <div class="research-note">
+        <strong>Key idea:</strong>
+        Good sleep happens when high sleep pressure and the
+        night phase of the body clock line up. Irregular wake
+        times shift the clock from day to day, so the two
+        systems drift apart. This leads to trouble falling
+        asleep, grogginess on waking, and sleepiness during
+        the day.
+      </div>
+
+
+      <h2>3. Sleep in late adolescence and early adulthood</h2>
+
+      <h3>3.1 How much sleep is needed</h3>
+
+      <p>
+        The National Sleep Foundation's expert panel
+        (Hirshkowitz et al., 2015) recommends 7 to 9 hours
+        for young adults aged 18 to 25, with 6 and 10 hours
+        listed as "may be appropriate" for some people.
+        Teenagers aged 14 to 17 are advised to get 8 to 10
+        hours. At 18, the person sits right on the boundary,
+        so aiming for roughly 8 hours is a sensible target.
+      </p>
+
+      <p>
+        The American Academy of Sleep Medicine and Sleep
+        Research Society consensus (Watson et al., 2015)
+        also recommends that adults regularly sleep 7 or
+        more hours for good health.
+      </p>
+
+
+      <h3>3.2 The delayed body clock</h3>
+
+      <p>
+        Adolescence brings a natural delay in the body clock
+        and a slower build up of sleep pressure (Carskadon
+        and colleagues have documented this extensively).
+        Many people in this age range feel sleepy later at
+        night and wake up more easily later. This is
+        physiology, not laziness. It means that waking very
+        early without a plan to protect your sleep can lead
+        to long term sleep debt, while sleeping very late
+        on free days can push the clock even later.
+      </p>
+
+
+      <h3>3.3 Social jetlag</h3>
+
+      <p>
+        Roenneberg and colleagues came up with the term
+        social jetlag for the mismatch between the body
+        clock and social schedules. It is measured as the
+        difference in mid sleep time between workdays and
+        free days. Larger social jetlag is linked to worse
+        mood, more tiredness, and poorer health. A changing
+        wake time is basically social jetlag you give yourself.
+      </p>
+
+
+      <h3>3.4 Regularity and academic results</h3>
+
+      <p>
+        Phillips et al. (2017) studied college students using
+        objective sleep tracking. They found that irregular
+        sleep timing was linked to a later body clock and
+        lower academic performance, even when total sleep
+        was about the same. The practical message: when you
+        sleep matters, not just how long.
+      </p>
+
+
+      <h2>4. What "sleep hygiene" includes, and how strong the evidence is</h2>
+
+      <p>
+        Sleep hygiene is not a single intervention. Irish
+        et al. (2015) reviewed the research and concluded
+        that the evidence is strongest for some elements
+        (avoiding stimulants, regular schedules, the sleep
+        environment) and weaker for others. They also found
+        that hygiene alone is often not enough for clinical
+        insomnia. Still, it works well as a foundation for
+        otherwise healthy people and is the first step in
+        any treatment.
+      </p>
+
+      <div class="research-table-wrap">
+        <table class="research-table">
+          <thead>
+            <tr>
+              <th>Practice</th>
+              <th>Evidence strength</th>
+              <th>Main mechanism</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Consistent wake time</td>
+              <td>Strong</td>
+              <td>Keeps the body clock stable</td>
+            </tr>
+            <tr>
+              <td>Morning daylight</td>
+              <td>Strong</td>
+              <td>Sets the body clock</td>
+            </tr>
+            <tr>
+              <td>Caffeine curfew</td>
+              <td>Strong</td>
+              <td>Blocks adenosine, delays sleep</td>
+            </tr>
+            <tr>
+              <td>Dim light and screen limits at night</td>
+              <td>Moderate to strong</td>
+              <td>Reduces melatonin suppression and alertness</td>
+            </tr>
+            <tr>
+              <td>Cool, dark, quiet bedroom</td>
+              <td>Moderate</td>
+              <td>Helps you sleep without waking</td>
+            </tr>
+            <tr>
+              <td>Regular exercise</td>
+              <td>Moderate to strong</td>
+              <td>Raises sleep pressure, deepens sleep</td>
+            </tr>
+            <tr>
+              <td>Avoiding alcohol and nicotine</td>
+              <td>Strong</td>
+              <td>They break up sleep and disturb its stages</td>
+            </tr>
+            <tr>
+              <td>Short, early naps</td>
+              <td>Moderate</td>
+              <td>Reduces sleepiness with limited cost to night sleep</td>
+            </tr>
+            <tr>
+              <td>Wind down routine, worry management</td>
+              <td>Moderate</td>
+              <td>Lowers alertness before sleep</td>
+            </tr>
+            <tr>
+              <td>Avoiding large late meals</td>
+              <td>Weak to moderate</td>
+              <td>Reduces discomfort and reflux</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <h2>5. Core recommendations for this profile</h2>
+
+      <h3>5.1 Anchor the wake time (highest priority)</h3>
+
+      <p>
+        With a bedtime near 11:30 pm, a wake time of about
+        7:00 to 7:30 am gives 7.5 to 8 hours in bed, which
+        fits the recommended range for age 18. The exact
+        time should suit your classes, prayers, and commute.
+        What matters is that it varies by no more than about
+        one hour, weekends included.
+      </p>
+
+      <p><strong>Practical points:</strong></p>
+
+      <ul>
+        <li>
+          Choose the wake time first and let the bedtime follow.
+          A fixed rising time is easier to stick to than a fixed
+          bedtime, because you cannot force sleep to start.
+        </li>
+        <li>
+          If you sleep badly one night, still get up at the
+          anchor time. Sleeping in to make up for it teaches
+          your clock to shift and makes the next night worse.
+          If you need to catch up, take a short early afternoon
+          nap instead (see 5.5).
+        </li>
+        <li>
+          If you currently wake at very different times, move
+          toward the anchor in steps of about 30 minutes every
+          few days rather than all at once.
+        </li>
+        <li>
+          Place your alarm across the room, and use one alarm,
+          not a chain of snoozes. Snoozing breaks up the last
+          stretch of sleep and adds little rest.
+        </li>
+      </ul>
+
+
+      <h3>5.2 Get bright light soon after waking</h3>
+
+      <p>
+        Morning light is the strongest signal for the body
+        clock. Aim for 10 to 30 minutes of outdoor light
+        within an hour of waking. Even on cloudy days,
+        outdoor light is far brighter than indoor lighting.
+        Open the curtains right away, and if possible have
+        breakfast near a window or outside.
+      </p>
+
+      <p>
+        In Kashmir's winter, when fog and cloud are common
+        and sunrise is late, spending time by the brightest
+        window or outside in the midday sun partly makes
+        up for it.
+      </p>
+
+      <p>
+        At night, do the opposite: lower the lights in the
+        last 1 to 2 hours. Use warm, dim lamps rather than
+        bright white overhead light.
+      </p>
+
+
+      <h3>5.3 Caffeine: set a curfew</h3>
+
+      <p>
+        Drake et al. (2013) found that 400 mg of caffeine
+        taken even 6 hours before bedtime clearly reduced
+        total sleep time. A practical rule is no caffeine
+        after about 2:00 pm for an 11:30 pm bedtime, and
+        less overall if you notice poor sleep.
+      </p>
+
+      <p>
+        <strong>Local note:</strong> Noon chai (sheer chai),
+        black tea, kahwa (made with green tea), energy drinks,
+        coffee, and cola all contain caffeine in different
+        amounts. A cup of tea in the late afternoon or
+        evening is a very common hidden cause of delayed
+        sleep.
+      </p>
+
+      <p>
+        Caffeine free options for the evening include warm
+        milk, herbal drinks, or kahwa made with only spices
+        and almonds and not much tea.
+      </p>
+
+
+      <h3>5.4 Screens and the hour before sleep</h3>
+
+      <p>
+        Research suggests that light from devices before
+        bed can delay melatonin and sleep onset (Chang
+        et al., 2015, comparing e readers with printed books).
+        Evening screen use is also linked to shorter, later
+        sleep in teenagers and young adults (for example
+        Hysing et al., 2015).
+      </p>
+
+      <p>
+        Light is only part of the story. The content keeps
+        your brain busy, and endless scrolling pushes bedtime
+        itself later.
+      </p>
+
+      <p><strong>What to do:</strong></p>
+
+      <ul>
+        <li>
+          Stop using your phone 30 to 60 minutes before bed
+          where possible. Charge it somewhere out of arm's reach.
+        </li>
+        <li>
+          If you have to use it, lower the brightness, turn on
+          night or warm display mode, and avoid stressful
+          content, work, and social media arguments.
+        </li>
+        <li>
+          Spend the last hour on calm activities: reading a
+          paper book, light stretching, prayer or reflection,
+          a warm shower, or planning tomorrow.
+        </li>
+      </ul>
+
+
+      <h3>5.5 Naps</h3>
+
+      <p>
+        Naps can help, but they can also use up the sleep
+        pressure you need at night.
+      </p>
+
+      <ul>
+        <li>
+          Keep naps to 20 to 30 minutes, and finish before
+          about 3:00 pm.
+        </li>
+        <li>
+          Avoid long naps (over 60 minutes) in the late
+          afternoon or evening.
+        </li>
+        <li>
+          If you find yourself needing a long nap every day,
+          take that as a sign that your night sleep is too
+          short or keeps getting broken.
+        </li>
+      </ul>
+
+
+      <h3>5.6 Food, drink, and exercise</h3>
+
+      <p>
+        <strong>Meals:</strong> Have a regular dinner at least
+        2 to 3 hours before bed. Very heavy, spicy, or fried
+        meals late at night can cause reflux and discomfort.
+        Being very hungry can also disturb sleep, so a light
+        snack such as warm milk or fruit is fine.
+      </p>
+
+      <p>
+        <strong>Fluids:</strong> Cut back on large drinks in
+        the last hour so you don't wake up to use the bathroom.
+      </p>
+
+      <p>
+        <strong>Exercise:</strong> Regular physical activity
+        helps you sleep deeper and fall asleep faster.
+        Moderate to hard exercise is best earlier in the day.
+        For most people, intense exercise within 1 hour of
+        bed is not harmful, but gentle activity is a safer
+        choice if you notice it keeps you alert.
+      </p>
+
+      <p>
+        <strong>Alcohol, nicotine, vaping, and other substances:</strong>
+        Nicotine is a stimulant. Alcohol and sedatives may
+        help you fall asleep faster, but they break up sleep
+        and make it worse. Avoid them near bedtime, and
+        avoid sleep aids bought without medical advice.
+      </p>
+
+
+      <h3>5.7 The bedroom</h3>
+
+      <p>
+        A bedroom should be dark, quiet, comfortable, and
+        slightly cool. Many sleep guides suggest about
+        18 to 20 °C for the best sleep, but in a Kashmiri
+        winter that is unrealistic and unnecessary. The
+        goal is simply to avoid getting too hot under heavy
+        bedding, so use layers you can remove.
+      </p>
+
+      <ul>
+        <li>
+          Use the bed only for sleep (and rest). Studying,
+          scrolling, and eating in bed teach the brain to
+          link the bed with being alert.
+        </li>
+        <li>
+          Reduce light with curtains, and cover or turn off
+          standby lights.
+        </li>
+        <li>
+          If noise is a problem (traffic, neighbors, dogs,
+          early calls to prayer), consider earplugs, a fan,
+          or soft background sound.
+        </li>
+        <li>
+          Keep the clock out of view so you don't keep
+          checking the time at night.
+        </li>
+      </ul>
+
+
+      <h3>5.8 Worry, stress, and the racing mind</h3>
+
+      <p>
+        Thoughts, worries, and planning before sleep are
+        among the most common reasons people struggle to
+        fall asleep. Techniques with good evidence include:
+      </p>
+
+      <ul>
+        <li>
+          <strong>A brief "worry list":</strong> Spend 5 to
+          10 minutes earlier in the evening writing down
+          worries and the next steps for each. Harvey and
+          others have shown that getting plans out of your
+          head can reduce overthinking before sleep. A similar
+          to do list for the next day was linked to faster
+          sleep onset in a small experiment by Scullin et al.
+          (2018).
+        </li>
+        <li>
+          <strong>Relaxation:</strong> Slow breathing (for
+          example breathing out longer than in), relaxing
+          your muscles one group at a time, or quiet prayer
+          or reflection.
+        </li>
+        <li>
+          <strong>If you can't sleep after about 20 minutes:</strong>
+          Get up, go to another dim place, do something calm,
+          and return when you feel sleepy. This comes from
+          stimulus control therapy, a core part of CBT-I.
+        </li>
+      </ul>
+
+
+      <h2>6. Kashmir specific considerations</h2>
+
+      <h3>6.1 Seasons and daylight</h3>
+
+      <p>
+        Kashmir has sharp seasonal changes. In summer, dawn
+        comes very early and days are long. In winter, sunrise
+        is late and evenings get dark and cold early, which
+        encourages staying indoors under blankets.
+      </p>
+
+      <p>
+        Low winter light matters because it can weaken the
+        body clock's anchor and may add to low mood and
+        sluggishness for some people. Practical steps: take
+        a short daytime walk, sit by the sunniest window,
+        and keep the same wake time even when it is dark
+        outside.
+      </p>
+
+
+      <h3>6.2 Where Kashmir sits relative to IST</h3>
+
+      <p>
+        Indian Standard Time is based on a meridian at about
+        82.5° E. Srinagar is at roughly 74.8° E, so local
+        solar time is behind IST by around half an hour
+        compared with the reference meridian.
+      </p>
+
+      <p>
+        In practice, sunrise and sunset happen later on the
+        clock than in eastern India. This is a plausible
+        reason why evenings stay light later in summer,
+        though the effect has not been studied specifically
+        for Kashmir. It reinforces the value of using real
+        daylight, not the clock, to anchor your day.
+      </p>
+
+
+      <h3>6.3 Heating and safety</h3>
+
+      <div class="research-warning">
+        <strong>This is the most important safety point in the paper.</strong>
+        Traditional winter heating such as the bukhari
+        (wood or fuel stove), the kangri (a pot of embers),
+        charcoal burners, and gas or fuel heaters can produce
+        carbon monoxide, which has no smell and can be fatal
+        during sleep.
+      </div>
+
+      <ul>
+        <li>
+          Never sleep in a closed room with a burning charcoal,
+          wood, or fuel heater, and never take a kangri or live
+          embers to bed in a room without fresh air.
+        </li>
+        <li>
+          Make sure chimneys and flues are clear and the room
+          is ventilated.
+        </li>
+        <li>
+          If possible, use a CO alarm, and consider electric
+          blankets (used as instructed), hot water bottles,
+          and warm layers instead of open flames.
+        </li>
+        <li>
+          Headache, dizziness, nausea, or confusion in a
+          heated, closed room is an emergency: get fresh air
+          and seek medical help immediately.
+        </li>
+      </ul>
+
+
+      <h3>6.4 Power cuts and connectivity</h3>
+
+      <p>
+        Irregular electricity can interrupt sleep through
+        sudden darkness, loss of heating, and alarm failures.
+        Keep a battery powered or phone based backup alarm
+        and a small torch. Internet disruptions, when they
+        happen, can suddenly change evening habits, so having
+        an offline wind down routine (a book, journaling,
+        prayer) helps.
+      </p>
+
+
+      <h3>6.5 Fajr, Ramadan, and religious routines</h3>
+
+      <p>
+        For many people in Kashmir, waking for Fajr is a
+        meaningful part of the day, and it can fit well with
+        a regular schedule. There are two approaches:
+      </p>
+
+      <p>
+        <strong>If you wake for Fajr daily:</strong> Treat
+        that as your anchor and move your bedtime earlier
+        so total sleep stays near 7 to 8 hours (for example,
+        around 10:00 to 10:30 pm for a pre dawn wake in winter).
+        A short nap later in the morning is fine.
+      </p>
+
+      <p>
+        <strong>If you pray Fajr and go back to sleep:</strong>
+        Keep the second wake time fixed rather than changing it.
+      </p>
+
+      <p>
+        <strong>During Ramadan:</strong> Schedules change with
+        suhoor and iftar, and sleep is commonly split. Keep
+        one consistent main sleep block, use a short afternoon
+        nap, avoid heavy late meals and caffeine at suhoor,
+        get morning light, and return to your regular schedule
+        soon after Ramadan.
+      </p>
+
+
+      <h3>6.6 Altitude, cold, and dryness</h3>
+
+      <p>
+        Srinagar is at roughly 1,600 m, which is not high
+        enough to cause altitude related sleep problems in
+        most people, but indoor heating can dry the air.
+        Dry air can irritate the nose and throat and disturb
+        sleep.
+      </p>
+
+      <p>
+        A bowl of water in the room or a humidifier can help
+        if you notice dryness. Dress warmly in layers rather
+        than overheating the room.
+      </p>
+
+
+      <h2>7. Special issues relevant at age 18</h2>
+
+      <h3>7.1 The pull of late nights</h3>
+
+      <p>
+        The habits of late adolescence (study sessions,
+        gaming, social media, group chats) are the main
+        reason bedtimes slide later. Your current bedtime
+        is decent, so the aim is to protect it. A useful
+        rule: decide in advance what ends the evening
+        (for example, a set time when the phone goes on
+        charge), instead of relying on willpower in the moment.
+      </p>
+
+
+      <h3>7.2 Exams and all nighters</h3>
+
+      <p>
+        Giving up sleep to study usually backfires. Sleep
+        after learning helps lock in memory, and lack of
+        sleep hurts attention and recall. Study earlier in
+        the day if possible, use short blocks, and avoid
+        caffeine after midday during exam periods.
+      </p>
+
+
+      <h3>7.3 Sleep extension and weekends</h3>
+
+      <p>
+        Mah et al. (2011) found that athletes who extended
+        their sleep to about 10 hours improved their
+        performance and mood, showing that many young
+        people are mildly sleep deprived. If you feel tired
+        during the day, adding 30 to 60 minutes of consistent
+        sleep time (moving bedtime slightly earlier while
+        keeping the same wake time) is better than sleeping
+        in on weekends.
+      </p>
+
+
+      <h2>8. Common problems and what to try</h2>
+
+      <div class="research-table-wrap">
+        <table class="research-table">
+          <thead>
+            <tr>
+              <th>Problem</th>
+              <th>Likely contributors</th>
+              <th>What to try</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Takes over 30 minutes to fall asleep</td>
+              <td>Caffeine, screens, late naps, anxiety, irregular wake time</td>
+              <td>Fix wake time, caffeine curfew, wind down, worry list</td>
+            </tr>
+            <tr>
+              <td>Waking in the night</td>
+              <td>Heat, noise, late fluids, stress, alcohol</td>
+              <td>Adjust room temperature, reduce evening fluids, relaxation</td>
+            </tr>
+            <tr>
+              <td>Can't wake up in the morning</td>
+              <td>Short sleep, late light exposure, drifting wake time</td>
+              <td>Anchor wake time, morning light, earlier bedtime by 30 minutes</td>
+            </tr>
+            <tr>
+              <td>Very sleepy mid afternoon</td>
+              <td>Short night, heavy lunch, low light</td>
+              <td>Short nap (20 minutes), daylight walk, lighter lunch</td>
+            </tr>
+            <tr>
+              <td>Strong urge to sleep until noon</td>
+              <td>Delayed clock, social jetlag</td>
+              <td>Move wake time earlier by 30 minutes every few days, morning light</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <h2>9. A two week implementation plan</h2>
+
+      <p>
+        The following plan introduces changes gradually rather
+        than trying to change every habit at once.
+      </p>
+
+      <ol class="research-plan">
+
+        <li>
+          <strong>Days 1 to 3: Measure</strong>
+          Keep a simple sleep diary (see Section 10). Don't
+          change anything yet, just note your actual bedtime,
+          how long it took to fall asleep, wake time, caffeine,
+          naps, and screen use.
+        </li>
+
+        <li>
+          <strong>Days 4 to 7: Anchor</strong>
+          Pick a wake time between 7:00 and 7:30 (or earlier
+          if Fajr is your anchor). Get up at that time every
+          day, even after a bad night. Get 10 to 20 minutes
+          of morning light. Set a caffeine cutoff of 2:00 pm.
+        </li>
+
+        <li>
+          <strong>Days 8 to 10: Protect the evening</strong>
+          Add a phone away time 30 to 60 minutes before bed.
+          Dim the lights. Add a 5 minute worry list earlier
+          in the evening.
+        </li>
+
+        <li>
+          <strong>Days 11 to 14: Fine tune</strong>
+          Adjust naps, evening meal timing, and room setup.
+          If you still feel tired during the day, move bedtime
+          15 to 30 minutes earlier.
+        </li>
+
+      </ol>
+
+      <p>
+        After two weeks, review your diary. Judge success by
+        consistency, daytime alertness, and mood, not by one
+        perfect night. Sleep improves gradually, and some
+        nights will still be poor.
+      </p>
+
+
+      <h2>10. Simple sleep diary template</h2>
+
+      <p>
+        Fill in one row for each day. Tracking these details
+        can help you recognise patterns and understand which
+        habits affect your sleep.
+      </p>
+
+      <div class="research-table-wrap">
+        <table class="research-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Bedtime</th>
+              <th>Minutes to fall asleep</th>
+              <th>Night wakings</th>
+              <th>Wake time</th>
+              <th>Rested? (1 to 5)</th>
+              <th>Caffeine (last time)</th>
+              <th>Nap</th>
+              <th>Screen off at</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>&nbsp;</td><td></td><td></td><td></td><td></td>
+              <td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td><td></td><td></td><td></td><td></td>
+              <td></td><td></td><td></td><td></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td><td></td><td></td><td></td><td></td>
+              <td></td><td></td><td></td><td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <h2>11. When to seek professional help</h2>
+
+      <p>
+        Consider speaking with a doctor or sleep specialist if:
+      </p>
+
+      <ul>
+        <li>
+          You have trouble sleeping at least three nights
+          per week for over three months, even with good
+          habits (possible insomnia disorder).
+        </li>
+        <li>
+          You snore loudly, gasp or stop breathing in your
+          sleep, or wake up tired despite enough hours
+          (possible sleep apnea).
+        </li>
+        <li>
+          You have a strong urge to move your legs at night,
+          or sudden sleep attacks during the day.
+        </li>
+        <li>
+          You sleep very late and cannot shift earlier
+          despite sustained effort (possible delayed sleep
+          wake phase disorder).
+        </li>
+        <li>
+          Low mood, anxiety, or hopelessness comes along
+          with the sleep problems.
+        </li>
+        <li>
+          You rely on alcohol, sedatives, or other substances
+          to sleep.
+        </li>
+      </ul>
+
+      <p>
+        The first choice treatment for chronic insomnia is
+        cognitive behavioral therapy for insomnia (CBT-I),
+        which has stronger long term results than sleeping
+        pills (Qaseem et al., 2016, American College of
+        Physicians). Sleeping tablets should only be used
+        under medical guidance.
+      </p>
+
+
+      <h2>12. Limitations</h2>
+
+      <p>
+        Much sleep research is done in Western populations,
+        and little work is specific to Kashmir. The regional
+        sections combine general science with local context
+        and should be read as reasoned application, not as
+        findings from Kashmir studies.
+      </p>
+
+      <p>
+        Many studies are observational, so they show
+        associations rather than proof of cause.
+      </p>
+
+      <p>
+        This paper is based only on the information provided
+        (age, bedtime, changing wake time) and does not
+        assess health conditions, medications, or workload.
+      </p>
+
+
+      <h2>13. Conclusion</h2>
+
+      <p>
+        For an 18 year old in Kashmir who already goes to bed
+        at a reasonable time, the best improvement is simple:
+        choose a consistent wake time, get morning light,
+        cut caffeine after early afternoon, and protect a
+        calm wind down. Adapt this to Kashmir's seasons,
+        treat heating safety as non negotiable, and handle
+        prayer and Ramadan schedules with one fixed main
+        sleep block.
+      </p>
+
+    </article>
+
+
+    <!-- DISCLAIMER -->
+    <div class="article-disclaimer">
+      <strong>Educational disclaimer</strong>
+      <p>
+        This paper is for learning only. It is not medical
+        advice and does not replace a check up with a doctor.
+        If you experience persistent sleep difficulties or
+        concerning symptoms, consult a qualified healthcare
+        professional.
+      </p>
+    </div>
+
+
+    <!-- COMMENTS: KEEP FIREBASE FUNCTIONALITY -->
+    <section
+      class="comments-section"
+      data-comments
+      data-research-id="sleep-hygiene"
+    >
+
+      <p class="eyebrow">READER DISCUSSION</p>
+
+      <h2>Join the conversation.</h2>
+
+      <p class="comments-intro">
+        Sign in with Google to share a thought or ask a
+        question about this research.
+      </p>
+
+      <div class="auth-row">
+
+        <span class="user-status" data-user-status>
+          You're browsing as a guest.
+        </span>
+
+        <button
+          class="button button-dark"
+          type="button"
+          data-google-signin
+        >
+          Continue with Google
+        </button>
+
+        <button
+          class="button button-outline"
+          type="button"
+          data-signout
+          hidden
+        >
+          Sign out
+        </button>
+
+      </div>
+
       <form class="comment-form" data-comment-form>
+
         <label for="comment-text">Your comment</label>
-        <textarea id="comment-text" name="comment" rows="4" maxlength="2000" placeholder="Share your thoughts..." required disabled></textarea>
-        <div class="comment-form-footer"><small>Be respectful. Comments are public.</small><button class="button button-dark" type="submit" disabled>Post comment</button></div>
-        <p class="comment-feedback" data-comment-feedback role="status"></p>
+
+        <textarea
+          id="comment-text"
+          name="comment"
+          rows="4"
+          maxlength="2000"
+          placeholder="Share your thoughts..."
+          required
+          disabled
+        ></textarea>
+
+        <div class="comment-form-footer">
+
+          <small>Be respectful. Comments are public.</small>
+
+          <button
+            class="button button-dark"
+            type="submit"
+            disabled
+          >
+            Post comment
+          </button>
+
+        </div>
+
+        <p
+          class="comment-feedback"
+          data-comment-feedback
+          role="status"
+        ></p>
+
       </form>
-      <div class="comments-list" data-comments-list aria-live="polite"><p class="muted">Loading discussion…</p></div>
+
+      <div
+        class="comments-list"
+        data-comments-list
+        aria-live="polite"
+      >
+        <p class="muted">Loading discussion…</p>
+      </div>
+
     </section>
-    <div class="article-end"><span>THE INNER ATLAS</span><a class="text-link" href="index.html#articles">More research <span>↗</span></a></div>
+
+
+    <!-- ARTICLE END -->
+    <div class="article-end">
+
+      <span>THE INNER ATLAS</span>
+
+      <a class="text-link" href="index.html#articles">
+        More research <span>↗</span>
+      </a>
+
+    </div>
+
   </main>
-  <footer class="site-footer"><a class="brand" href="index.html"><span class="brand-mark">IA</span><span>The Inner Atlas</span></a><span>Made for curious minds.</span><span>© <span id="year"></span> The Inner Atlas</span></footer>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <a class="brand" href="index.html">
+      <span class="brand-mark">IA</span>
+      <span>The Inner Atlas</span>
+    </a>
+
+    <span>Made for curious minds.</span>
+
+    <span>
+      © <span id="year"></span> The Inner Atlas
+    </span>
+
+  </footer>
+
+
+  <!-- EXISTING FIREBASE FUNCTIONALITY -->
   <script type="module" src="script.js"></script>
+
+  <!-- MOBILE NAVIGATION -->
+  <script src="menu.js"></script>
+
 </body>
 </html>
