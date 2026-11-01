@@ -218,7 +218,27 @@ a { color: inherit; text-decoration: none; }
     }
 }
 
+/* Force profile image into a square on mobile */
+@media screen and (max-width: 760px) {
+  .home-about .home-about-photo {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1 !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+    position: relative;
+  }
 
+  .home-about .home-about-photo img {
+    position: absolute !important;
+    inset: 0 !important;
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+  }
+}
 
 
 /* RESEARCH COMMENTS */
