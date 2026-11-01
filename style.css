@@ -843,7 +843,7 @@ a {
     max-width: 100%;
     height: auto;
     aspect-ratio: 1 / 1;
-    justify-self: center;
+    justify-self: start;
     overflow: hidden;
     position: relative;
   }
