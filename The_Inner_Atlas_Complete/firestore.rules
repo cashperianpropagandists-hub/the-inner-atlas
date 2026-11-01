@@ -1,0 +1,22 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /research/{researchId}/comments/{commentId} {
+      allow read: if true;
+      allow create: if request.auth != null
+        && request.resource.data.keys().hasOnly(['text', 'uid', 'displayName', 'photoURL', 'createdAt'])
+        && request.resource.data.keys().hasAll(['text', 'uid', 'displayName', 'photoURL', 'createdAt'])
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.text is string
+        && request.resource.data.text.size() > 0
+        && request.resource.data.text.size() <= 2000
+        && request.resource.data.displayName is string
+        && request.resource.data.displayName.size() <= 100
+        && request.resource.data.photoURL is string
+        && request.resource.data.photoURL.size() <= 1000
+        && request.resource.data.createdAt == request.time;
+      allow update, delete: if request.auth != null
+        && resource.data.uid == request.auth.uid;
+    }
+  }
+}
