@@ -1,5 +1,4 @@
- "AIzaSyB8848mHQ9qB7B2yDsb2Jax4P_-ZEhJ6Lo",
- // 1) Create a Firebase project and register a Web app.
+// 1) Create a Firebase project and register a Web app.
 // 2) Copy the Firebase web-app config from Firebase Console into the object below.
 // These are public client settings, NOT private service-account credentials.
 
